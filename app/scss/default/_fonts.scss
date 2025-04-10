@@ -1,3 +1,4 @@
+@use "./mixins" as *;
 // Подключение локальных шрифтов
 @include ff("Inter", "Regular");
 @include ff("Inter", "Variable");

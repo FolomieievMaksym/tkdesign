@@ -1,18 +1,31 @@
+@use "mixins.scss" as *;
+@use "variables.scss" as *;
+
 body.lock {
-   overflow: hidden;
+  overflow: hidden;
 }
 
 body {
-   font-family: $ff1;
-   @include fl(16);
+  font-family: $ff1;
+  @include fl(16);
 }
 .wrapper {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   min-height: 100vh;
-   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  overflow: hidden;
 }
 main {
-   flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+button {
+  font-family: inherit;
+  font-size: inherit;
 }

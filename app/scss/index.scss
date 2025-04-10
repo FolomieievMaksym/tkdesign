@@ -1,24 +1,27 @@
 // Подлкючение базовых стилей
-@import "./default/variables";
-@import "./default/null";
-@import "./default/mixins";
-@import "./default/function";
-@import "./default/patterns";
-@import "./default/fonts";
-@import "./default/global";
-@import "./default/text";
+@use "./default/variables";
+@use "./default/null";
+@use "./default/mixins";
+@use "./default/function";
+@use "./default/patterns";
+@use "./default/fonts";
+@use "./default/global";
+@use "./default/text";
 
 // Header / Footer
-@import "./components/structure/header";
-@import "./components/structure/footer";
+@use "./components/structure/header";
+@use "./components/structure/footer";
 
 // Подключение стилей компонентов
-@import "./components/base/btn";
-@import "./components/base/spoiler";
-@import "./components/base/pop-up";
-@import "./components/base/pop-up-video";
-@import "./components/base/animate";
-// @import "./components/base/marquee";
+// @use "./components/base/btn";
+// @use "./components/base/spoiler";
+// @use "./components/base/pop-up";
+// @use "./components/base/pop-up-video";
+// @use "./components/base/animate";
+@use "./components/openFormButton";
+@use "./components/contactForm";
+
+// @use "./components/base/marquee";
 
 //Подключение стилей конкретной страницы
-@import "./pages/index";
+@use "./pages/index";

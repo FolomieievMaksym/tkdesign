@@ -1,0 +1,22 @@
+@use "../default" as *;
+.contact-form-btn {
+  background-color: $dark;
+  //   min-width: 260px;
+  color: $white;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  @include fl(8);
+  letter-spacing: 0.18em;
+  padding: 10px;
+  @media (min-width: 568px) {
+    @include fl(10);
+    padding: 14px;
+  }
+  @media (min-width: 990px) {
+    padding: 23px;
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+}

@@ -1,5 +1,6 @@
+@use "../../default" as *;
 .footer {
-   &__container {
-      @extend %container;
-   }
+  &__container {
+    @extend %container;
+  }
 }
