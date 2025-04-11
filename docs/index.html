@@ -161,6 +161,8 @@
             type="text"
             name="name"
             placeholder="your name"
+            minlength="1"
+            value="name"
           />
           <input
             required
@@ -168,13 +170,17 @@
             type="email"
             name="email"
             placeholder="your email"
+            value="folomieiev.m@gmail.com"
           />
           <textarea
             required
             class="contact-pop-up__field contact-pop-up__field_area"
             name="message"
             placeholder="message"
-          ></textarea>
+            minlength="10"
+          >
+			 hello from front
+          </textarea>
         </div>
         <button
           type="submit"

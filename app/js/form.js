@@ -2,6 +2,7 @@ const popUp = document.querySelector(".contact-pop-up");
 const popUpOpenBtns = document.querySelectorAll("[data-form-open]");
 const popUpClose = document.querySelector(".contact-pop-up__close");
 const popUpBody = document.querySelector(".contact-pop-up__body");
+const form = document.querySelector(".contact-pop-up__form");
 popUpOpenBtns.forEach((el) => {
   el.addEventListener("click", showPopUp);
 });
@@ -19,4 +20,11 @@ function closePopUp() {
 }
 function handleClickOutside(e) {
   if (!e.target.closest(".contact-pop-up__body")) closePopUp();
+}
+form.addEventListener("submit", handleForm);
+async function handleForm(e) {
+  e.preventDefault();
+  const name = e.target.elements.name;
+  const email = e.target.elements.email;
+  const message = e.target.elements.message;
 }
