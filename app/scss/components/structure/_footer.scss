@@ -29,6 +29,8 @@
   // .footer__logo
 
   &__logo {
+    width: 100%;
+    max-width: 90px;
     grid-row: 1/2;
     @media (max-width: 567px) {
       margin-bottom: 4px;
