@@ -10,8 +10,11 @@
   height: 100vh;
   padding: 10px;
   background-color: rgba($dark, 0.8);
-  display: grid;
   align-items: center;
+  display: none;
+  &.visible {
+    display: grid;
+  }
   // .contact-pop-up__body
 
   &__body {

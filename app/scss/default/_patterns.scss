@@ -1,6 +1,18 @@
 %ltr-sps {
   letter-spacing: -0.02em;
 }
+%container-v {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @media (min-width: 568px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @media (min-width: 990px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
 %container {
   padding-left: 10px;
   padding-right: 10px;
