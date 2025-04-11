@@ -49,6 +49,7 @@
   // .footer__text
 
   &__text {
+    align-self: center;
     letter-spacing: 0.018em;
     text-transform: uppercase;
     @include fl(8);
@@ -72,6 +73,7 @@
   // .footer__policy
 
   &__policy {
+    align-self: center;
     letter-spacing: 0.018em;
     text-transform: uppercase;
     @include fl(8);

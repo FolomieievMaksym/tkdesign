@@ -445,6 +445,7 @@ button {
 }
 
 .footer__text {
+  align-self: center;
   letter-spacing: 0.018em;
   text-transform: uppercase;
   font-size: 0.5rem;
@@ -452,6 +453,7 @@ button {
 }
 
 .footer__policy {
+  align-self: center;
   letter-spacing: 0.018em;
   text-transform: uppercase;
   font-size: 0.5rem;
