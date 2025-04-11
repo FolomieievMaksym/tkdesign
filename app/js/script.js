@@ -17,5 +17,5 @@ import {} from "./spoiler.js";
 // import {} from "./accordion.js";
 // import {} from "./animate.js";
 // import {} from "./pop-up-video.js";
-// import {} from "./pop-up.js";
+import {} from "./pop-up.js";
 // import {} from "./marquee.js";

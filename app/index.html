@@ -3,7 +3,7 @@
 'lang': 'en',
 'css': 'index',
 'title': 'Home',
-'swiper': 'true',
+'swiper': 'false',
 })
 <!-- todo указать нужное значение дял подключени\отключения свайпера -->
 
@@ -56,7 +56,13 @@
 						<article class="services__item services-item">
 							<div class="services-item__head">
 								<h4 class="services-item__title">Start-Up</h4>
-								<button class="services-item__button button button-transparent">Learn More</button>
+								<button class="services-item__button button button-transparent" data-pop-up-open>Learn More</button>
+								@@include('./components/serviceItem.html', {
+									title:'Start-Up',
+									text:'If you\'re just starting out, this package is perfect for you! It includes some essential brand elements for a great visual look, so you can start attracting your ideal customers right away. This package also includes the editable source files',
+									img:'services_1.webp',
+									list:'<li>Primary Logo</li><li>Secondary Logo</li><li>Sub-mark</li><li>Colors</li><li>Logobook</li>',
+								})
 							</div>
 								<div class="services-item__img">
 									<img src="./img/services_1.webp" alt="todo_photo_description">
@@ -65,7 +71,13 @@
 						<article class="services__item services-item">
 							<div class="services-item__head">
 								<h4 class="services-item__title">Glow-Up</h4>
-								<button class="services-item__button button button-transparent">Learn More</button>
+								<button class="services-item__button button button-transparent" data-pop-up-open>Learn More</button>
+								@@include('./components/serviceItem.html', {
+									title:'Glow-Up',
+									text:'You are an established business and you are ready to take your brand identity to the next level. This strategic upgrade will help you to stand out from your competitors and to have a memorable look for your customers',
+									img:'work_2.webp',
+									list:'<li>Primary Logo</li><li>Secondary Logo</li><li>Sub-mark</li><li>Colors</li><li>Fonts</li><li>Collaterals</li><li>Social Media</li><li>Brand Guide</li>',
+								})
 							</div>
 								<div class="services-item__img">
 									<img src="./img/services_2.webp" alt="todo_photo_description">
@@ -74,7 +86,13 @@
 						<article class="services__item services-item">
 							<div class="services-item__head">
 								<h4 class="services-item__title">Brand & Web</h4>
-								<button class="services-item__button button button-transparent">Learn More</button>
+								<button class="services-item__button button button-transparent" data-pop-up-open>Learn More</button>
+								@@include('./components/serviceItem.html', {
+									title:'Brand & Web',
+									text:'Your business is growing, and you are ready to fully investin a complete and cohesive brand design including brand identity, stunning collaterals, packaging, print materials and social media design',
+									img:'services_3.webp',
+									list:'<li>Primary Logo</li><li>Secondary Logo</li><li>Sub-mark</li><li>Colors</li><li>Fonts</li><li>Packaging</li><li>Collaterals</li><li>Social Media</li><li>Brand Guide</li><li>Web Site</li>',
+								})
 							</div>
 								<div class="services-item__img">
 									<img src="./img/services_3.webp" alt="todo_photo_description">
@@ -83,7 +101,13 @@
 						<article class="services__item services-item">
 							<div class="services-item__head">
 								<h4 class="services-item__title">Add-Ons</h4>
-								<button class="services-item__button button button-transparent">Learn More</button>
+								<button class="services-item__button button button-transparent" data-pop-up-open>Learn More</button>
+								@@include('./components/serviceItem.html', {
+									title:'Add-ons',
+									text:'Want to enhance your brand and showcase your new project/ product/ look on all your marketing collaterals? I offer a variety of design assets including print materials, packaging design, social media templates, merchandise, and more!',
+									img:'services_4.webp',
+									list:'<li>Print Materials</li><li>Packaging Design</li><li>Ad Creative </li><li>Social Media Design </li>',
+								})
 							</div>
 								<div class="services-item__img">
 									<img src="./img/services_4.webp" alt="todo_photo_description">
@@ -180,25 +204,29 @@
 							<div class="work-items__image">
 								<img src="./img/work_1.webp" alt="todo_photo_description">
 							</div>
-							<button type="button" class="work-items__btn button button-transparent">Logo Design</button>
+							<button type="button" class="work-items__btn button button-transparent" data-pop-up-open>Logo Design</button>
+							@@include('./components/workItem.html')
 						</article>
 						<article class="work-items__item">
 							<div class="work-items__image work-items__image_contain">
 								<img src="./img/work_2.webp" alt="todo_photo_description">
 							</div>
-							<button type="button" class="work-items__btn button button-transparent">Branding</button>
+							<button type="button" class="work-items__btn button button-transparent" data-pop-up-open>Branding</button>
+							@@include('./components/workItem.html')
 						</article>
 						<article class="work-items__item">
 							<div class="work-items__image">
 								<img src="./img/work_3.webp" alt="todo_photo_description">
 							</div>
-							<button type="button" class="work-items__btn button button-transparent">Print Materials</button>
+							<button type="button" class="work-items__btn button button-transparent" data-pop-up-open>Print Materials</button>
+							@@include('./components/workItem.html')
 						</article>
 						<article class="work-items__item">
 							<div class="work-items__image">
 								<img src="./img/work_4.webp" alt="todo_photo_description">
 							</div>
-							<button type="button" class="work-items__btn button button-transparent">Content Design</button>
+							<button type="button" class="work-items__btn button button-transparent" data-pop-up-open>Content Design</button>
+							@@include('./components/workItem.html')
 						</article>
 					</div>
 				</div>
@@ -220,7 +248,7 @@
 		@@include('./components/structure/_footer.html')
 	</div>
 	@@include('./components/structure/_scripts.html', {
-	'swiper': 'true',
+	'swiper': 'false',
 	'script': 'script',
 	})
 	<!-- todo указать нужное значение дял подключения\отключения свайпера -->

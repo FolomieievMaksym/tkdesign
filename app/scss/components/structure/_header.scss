@@ -1,4 +1,5 @@
 @use "../../default" as *;
+@use "../../default/patterns" as *;
 .header {
   background-color: grey;
   position: fixed;

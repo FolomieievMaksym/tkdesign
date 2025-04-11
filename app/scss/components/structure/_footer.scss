@@ -1,4 +1,5 @@
 @use "../../default" as *;
+@use "../../default/patterns" as *;
 .footer {
   background-color: $dark;
   color: $white;
@@ -202,6 +203,10 @@
     color: $dark;
     text-transform: uppercase;
     @include fl(10);
+    transition: all 0.3s ease;
+    &:hover {
+      box-shadow: 0 0 10px rgba($biege, 0.3);
+    }
     @media (min-width: 568px) {
       @include fl(14);
       width: 45px;

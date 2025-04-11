@@ -1,4 +1,5 @@
 @use "../default" as *;
+@use "../default/patterns" as *;
 .contact-pop-up {
   position: fixed;
   z-index: 10;

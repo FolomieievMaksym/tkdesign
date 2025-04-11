@@ -1,5 +1,5 @@
 @use "./default" as *;
-
+@use "./default/patterns" as *;
 .main-title {
   color: $black;
   font-family: $ff2;
@@ -19,15 +19,9 @@
   color: $black;
   font-family: $ff2;
   font-variation-settings: "wght" 500;
-  @include fl(16);
+  @extend %fl18-24-32;
   i {
     font-family: $ff3;
-  }
-  @media (min-width: 568px) {
-    @include fl(24);
-  }
-  @media (min-width: 990px) {
-    @include fl(32);
   }
 }
 .main-text {
@@ -46,11 +40,10 @@
   text-transform: uppercase;
   display: block;
   letter-spacing: 0.018em;
-  //   @include fl(6);
   @include fl(10);
   padding: 12px 15px;
+  transition: all 0.3s ease;
   @media (min-width: 568px) {
-    //  @include fl(8);
     @include fl(12);
     padding: 14px 20px;
   }
@@ -62,6 +55,13 @@
 .button-transparent {
   color: $dark;
   border: 1px solid $dark;
+  transition: all 0.3s ease;
+  &:hover {
+    box-shadow: 0 0 4px rgba($dark, 0.3);
+  }
+  &:active {
+    box-shadow: 0 0 4px rgba($dark, 0.3), 0 0 6px rgba($dark, 0.4);
+  }
 }
 .hero {
   // .hero__container
@@ -368,13 +368,7 @@
 
   &__title {
     font-family: $ff2;
-    @include fl(16);
-    @media (min-width: 568px) {
-      @include fl(24);
-    }
-    @media (min-width: 990px) {
-      @include fl(32);
-    }
+    @extend %fl18-24-32;
   }
 
   // .services-item__button
@@ -512,7 +506,7 @@
 
   &__title {
     font-family: $ff3;
-    @include fl(14);
+    @extend %fl18-24-32;
     @media (max-width: 567px) {
       padding-top: 12px;
       padding-bottom: 12px;
@@ -524,12 +518,6 @@
       svg {
         transition: all 0.3s ease;
       }
-    }
-    @media (min-width: 568px) {
-      @include fl(24);
-    }
-    @media (min-width: 990px) {
-      @include fl(32);
     }
     button {
       display: flex;

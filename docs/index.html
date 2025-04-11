@@ -52,15 +52,9 @@
     
     <link
       rel="stylesheet"
-      href="./css/swiper-bundle.min.css"
-    />
-    
-    <link
-      rel="stylesheet"
       href="./css/index.min.css"
     />
     <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
-    <title>Home</title>
   </head>
 </html>
 
@@ -162,18 +156,21 @@
       <div class="contact-pop-up__content">
         <div class="contact-pop-up__fields">
           <input
+            required
             class="contact-pop-up__field"
             type="text"
             name="name"
             placeholder="your name"
           />
           <input
+            required
             class="contact-pop-up__field"
             type="email"
             name="email"
             placeholder="your email"
           />
           <textarea
+            required
             class="contact-pop-up__field contact-pop-up__field_area"
             name="message"
             placeholder="message"
@@ -216,7 +213,65 @@
 						<article class="services__item services-item">
 							<div class="services-item__head">
 								<h4 class="services-item__title">Start-Up</h4>
-								<button class="services-item__button button button-transparent">Learn More</button>
+								<button class="services-item__button button button-transparent" data-pop-up-open>Learn More</button>
+								<div
+  class="service-item"
+  data-pop-up
+>
+  <div class="service-item__body">
+    <button
+      type="button"
+      class="service-item__close"
+      data-pop-up-close
+    >
+      <svg
+        width="29"
+        height="27"
+        viewBox="0 0 29 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="2.70711"
+          y1="1.29289"
+          x2="27.4558"
+          y2="26.0416"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+        <line
+          x1="1.29289"
+          y1="26.0419"
+          x2="26.0416"
+          y2="1.29318"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+      </svg>
+    </button>
+    <div class="service-item__content">
+      <h5 class="service-item__title">Start-Up</h5>
+      <p class="service-item__text main-text">If you're just starting out, this package is perfect for you! It includes some essential brand elements for a great visual look, so you can start attracting your ideal customers right away. This package also includes the editable source files</p>
+      <ul class="service-item__list">
+        <li>Primary Logo</li><li>Secondary Logo</li><li>Sub-mark</li><li>Colors</li><li>Logobook</li>
+      </ul>
+      <div class="service-item__image">
+        <img
+          src="./img/services_1.webp"
+          alt="Start-Up"
+        />
+      </div>
+      <button
+        type="button"
+        class="service-item__button button-transparent button"
+        data-form-open
+      >
+        Start a Project
+      </button>
+    </div>
+  </div>
+</div>
+
 							</div>
 								<div class="services-item__img">
 									<img src="./img/services_1.webp" alt="todo_photo_description">
@@ -225,7 +280,65 @@
 						<article class="services__item services-item">
 							<div class="services-item__head">
 								<h4 class="services-item__title">Glow-Up</h4>
-								<button class="services-item__button button button-transparent">Learn More</button>
+								<button class="services-item__button button button-transparent" data-pop-up-open>Learn More</button>
+								<div
+  class="service-item"
+  data-pop-up
+>
+  <div class="service-item__body">
+    <button
+      type="button"
+      class="service-item__close"
+      data-pop-up-close
+    >
+      <svg
+        width="29"
+        height="27"
+        viewBox="0 0 29 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="2.70711"
+          y1="1.29289"
+          x2="27.4558"
+          y2="26.0416"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+        <line
+          x1="1.29289"
+          y1="26.0419"
+          x2="26.0416"
+          y2="1.29318"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+      </svg>
+    </button>
+    <div class="service-item__content">
+      <h5 class="service-item__title">Glow-Up</h5>
+      <p class="service-item__text main-text">You are an established business and you are ready to take your brand identity to the next level. This strategic upgrade will help you to stand out from your competitors and to have a memorable look for your customers</p>
+      <ul class="service-item__list">
+        <li>Primary Logo</li><li>Secondary Logo</li><li>Sub-mark</li><li>Colors</li><li>Fonts</li><li>Collaterals</li><li>Social Media</li><li>Brand Guide</li>
+      </ul>
+      <div class="service-item__image">
+        <img
+          src="./img/work_2.webp"
+          alt="Glow-Up"
+        />
+      </div>
+      <button
+        type="button"
+        class="service-item__button button-transparent button"
+        data-form-open
+      >
+        Start a Project
+      </button>
+    </div>
+  </div>
+</div>
+
 							</div>
 								<div class="services-item__img">
 									<img src="./img/services_2.webp" alt="todo_photo_description">
@@ -234,7 +347,65 @@
 						<article class="services__item services-item">
 							<div class="services-item__head">
 								<h4 class="services-item__title">Brand & Web</h4>
-								<button class="services-item__button button button-transparent">Learn More</button>
+								<button class="services-item__button button button-transparent" data-pop-up-open>Learn More</button>
+								<div
+  class="service-item"
+  data-pop-up
+>
+  <div class="service-item__body">
+    <button
+      type="button"
+      class="service-item__close"
+      data-pop-up-close
+    >
+      <svg
+        width="29"
+        height="27"
+        viewBox="0 0 29 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="2.70711"
+          y1="1.29289"
+          x2="27.4558"
+          y2="26.0416"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+        <line
+          x1="1.29289"
+          y1="26.0419"
+          x2="26.0416"
+          y2="1.29318"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+      </svg>
+    </button>
+    <div class="service-item__content">
+      <h5 class="service-item__title">Brand & Web</h5>
+      <p class="service-item__text main-text">Your business is growing, and you are ready to fully investin a complete and cohesive brand design including brand identity, stunning collaterals, packaging, print materials and social media design</p>
+      <ul class="service-item__list">
+        <li>Primary Logo</li><li>Secondary Logo</li><li>Sub-mark</li><li>Colors</li><li>Fonts</li><li>Packaging</li><li>Collaterals</li><li>Social Media</li><li>Brand Guide</li><li>Web Site</li>
+      </ul>
+      <div class="service-item__image">
+        <img
+          src="./img/services_3.webp"
+          alt="Brand & Web"
+        />
+      </div>
+      <button
+        type="button"
+        class="service-item__button button-transparent button"
+        data-form-open
+      >
+        Start a Project
+      </button>
+    </div>
+  </div>
+</div>
+
 							</div>
 								<div class="services-item__img">
 									<img src="./img/services_3.webp" alt="todo_photo_description">
@@ -243,7 +414,65 @@
 						<article class="services__item services-item">
 							<div class="services-item__head">
 								<h4 class="services-item__title">Add-Ons</h4>
-								<button class="services-item__button button button-transparent">Learn More</button>
+								<button class="services-item__button button button-transparent" data-pop-up-open>Learn More</button>
+								<div
+  class="service-item"
+  data-pop-up
+>
+  <div class="service-item__body">
+    <button
+      type="button"
+      class="service-item__close"
+      data-pop-up-close
+    >
+      <svg
+        width="29"
+        height="27"
+        viewBox="0 0 29 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="2.70711"
+          y1="1.29289"
+          x2="27.4558"
+          y2="26.0416"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+        <line
+          x1="1.29289"
+          y1="26.0419"
+          x2="26.0416"
+          y2="1.29318"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+      </svg>
+    </button>
+    <div class="service-item__content">
+      <h5 class="service-item__title">Add-ons</h5>
+      <p class="service-item__text main-text">Want to enhance your brand and showcase your new project/ product/ look on all your marketing collaterals? I offer a variety of design assets including print materials, packaging design, social media templates, merchandise, and more!</p>
+      <ul class="service-item__list">
+        <li>Print Materials</li><li>Packaging Design</li><li>Ad Creative </li><li>Social Media Design </li>
+      </ul>
+      <div class="service-item__image">
+        <img
+          src="./img/services_4.webp"
+          alt="Add-ons"
+        />
+      </div>
+      <button
+        type="button"
+        class="service-item__button button-transparent button"
+        data-form-open
+      >
+        Start a Project
+      </button>
+    </div>
+  </div>
+</div>
+
 							</div>
 								<div class="services-item__img">
 									<img src="./img/services_4.webp" alt="todo_photo_description">
@@ -340,25 +569,257 @@
 							<div class="work-items__image">
 								<img src="./img/work_1.webp" alt="todo_photo_description">
 							</div>
-							<button type="button" class="work-items__btn button button-transparent">Logo Design</button>
+							<button type="button" class="work-items__btn button button-transparent" data-pop-up-open>Logo Design</button>
+							<div
+  class="work-item"
+  data-pop-up
+>
+  <div class="work-item__body">
+    <button
+      type="button"
+      class="work-item__close"
+      data-pop-up-close
+    >
+      <svg
+        width="29"
+        height="27"
+        viewBox="0 0 29 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="2.70711"
+          y1="1.29289"
+          x2="27.4558"
+          y2="26.0416"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+        <line
+          x1="1.29289"
+          y1="26.0419"
+          x2="26.0416"
+          y2="1.29318"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+      </svg>
+    </button>
+    <div class="work-item__content">
+      <h5 class="work-item__title">@@title</h5>
+      <p class="work-item__text main-text">@@text</p>
+      <ul class="work-item__list">
+        @@list
+      </ul>
+      <div class="work-item__image">
+        <img
+          src="./img/@@img"
+          alt="@@title"
+        />
+      </div>
+      <button
+        type="button"
+        class="work-item__button button-transparent button"
+        data-form-open
+      >
+        Start a Project
+      </button>
+    </div>
+  </div>
+</div>
+
 						</article>
 						<article class="work-items__item">
 							<div class="work-items__image work-items__image_contain">
 								<img src="./img/work_2.webp" alt="todo_photo_description">
 							</div>
-							<button type="button" class="work-items__btn button button-transparent">Branding</button>
+							<button type="button" class="work-items__btn button button-transparent" data-pop-up-open>Branding</button>
+							<div
+  class="work-item"
+  data-pop-up
+>
+  <div class="work-item__body">
+    <button
+      type="button"
+      class="work-item__close"
+      data-pop-up-close
+    >
+      <svg
+        width="29"
+        height="27"
+        viewBox="0 0 29 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="2.70711"
+          y1="1.29289"
+          x2="27.4558"
+          y2="26.0416"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+        <line
+          x1="1.29289"
+          y1="26.0419"
+          x2="26.0416"
+          y2="1.29318"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+      </svg>
+    </button>
+    <div class="work-item__content">
+      <h5 class="work-item__title">@@title</h5>
+      <p class="work-item__text main-text">@@text</p>
+      <ul class="work-item__list">
+        @@list
+      </ul>
+      <div class="work-item__image">
+        <img
+          src="./img/@@img"
+          alt="@@title"
+        />
+      </div>
+      <button
+        type="button"
+        class="work-item__button button-transparent button"
+        data-form-open
+      >
+        Start a Project
+      </button>
+    </div>
+  </div>
+</div>
+
 						</article>
 						<article class="work-items__item">
 							<div class="work-items__image">
 								<img src="./img/work_3.webp" alt="todo_photo_description">
 							</div>
-							<button type="button" class="work-items__btn button button-transparent">Print Materials</button>
+							<button type="button" class="work-items__btn button button-transparent" data-pop-up-open>Print Materials</button>
+							<div
+  class="work-item"
+  data-pop-up
+>
+  <div class="work-item__body">
+    <button
+      type="button"
+      class="work-item__close"
+      data-pop-up-close
+    >
+      <svg
+        width="29"
+        height="27"
+        viewBox="0 0 29 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="2.70711"
+          y1="1.29289"
+          x2="27.4558"
+          y2="26.0416"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+        <line
+          x1="1.29289"
+          y1="26.0419"
+          x2="26.0416"
+          y2="1.29318"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+      </svg>
+    </button>
+    <div class="work-item__content">
+      <h5 class="work-item__title">@@title</h5>
+      <p class="work-item__text main-text">@@text</p>
+      <ul class="work-item__list">
+        @@list
+      </ul>
+      <div class="work-item__image">
+        <img
+          src="./img/@@img"
+          alt="@@title"
+        />
+      </div>
+      <button
+        type="button"
+        class="work-item__button button-transparent button"
+        data-form-open
+      >
+        Start a Project
+      </button>
+    </div>
+  </div>
+</div>
+
 						</article>
 						<article class="work-items__item">
 							<div class="work-items__image">
 								<img src="./img/work_4.webp" alt="todo_photo_description">
 							</div>
-							<button type="button" class="work-items__btn button button-transparent">Content Design</button>
+							<button type="button" class="work-items__btn button button-transparent" data-pop-up-open>Content Design</button>
+							<div
+  class="work-item"
+  data-pop-up
+>
+  <div class="work-item__body">
+    <button
+      type="button"
+      class="work-item__close"
+      data-pop-up-close
+    >
+      <svg
+        width="29"
+        height="27"
+        viewBox="0 0 29 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="2.70711"
+          y1="1.29289"
+          x2="27.4558"
+          y2="26.0416"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+        <line
+          x1="1.29289"
+          y1="26.0419"
+          x2="26.0416"
+          y2="1.29318"
+          stroke="#1B1B1B"
+          stroke-width="2"
+        />
+      </svg>
+    </button>
+    <div class="work-item__content">
+      <h5 class="work-item__title">@@title</h5>
+      <p class="work-item__text main-text">@@text</p>
+      <ul class="work-item__list">
+        @@list
+      </ul>
+      <div class="work-item__image">
+        <img
+          src="./img/@@img"
+          alt="@@title"
+        />
+      </div>
+      <button
+        type="button"
+        class="work-item__button button-transparent button"
+        data-form-open
+      >
+        Start a Project
+      </button>
+    </div>
+  </div>
+</div>
+
 						</article>
 					</div>
 				</div>
@@ -461,8 +922,6 @@
 
 	</div>
 	
-<script src="js/swiper-bundle.min.js"></script>
-
 <script type="text/javascript">
 	function downloadJSAtOnload() {
 		let element = document.createElement("script");
