@@ -51,6 +51,14 @@
 .button-dark {
   background-color: $dark;
   color: $white;
+  &:hover {
+    opacity: 0.8;
+    //  box-shadow: 0 0 4px rgba($dark, 0.3);
+  }
+  &:active {
+    opacity: 0.9;
+    //  box-shadow: 0 0 4px rgba($dark, 0.3), 0 0 6px rgba($dark, 0.4);
+  }
 }
 .button-transparent {
   color: $dark;
