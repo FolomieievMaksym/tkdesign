@@ -678,6 +678,9 @@ button {
   display: flex;
   flex-direction: column;
   text-align: left;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .service-item__close {

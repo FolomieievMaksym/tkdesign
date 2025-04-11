@@ -1,7 +1,0 @@
-.service-item {
-  display: none;
-}
-
-.service-item.visible {
-  display: block;
-}

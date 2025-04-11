@@ -21,12 +21,14 @@ if (document.querySelectorAll("[data-pop-up]").length > 1) {
 }
 function closePopUp(e) {
   if (e.target.closest("[data-pop-up] [data-pop-up-close]")) {
+    console.log(1);
     e.target.closest("[data-pop-up]").classList.remove("visible");
     document.body.classList.remove("lock");
   } else if (
-    !e.target.closest("[data-pop-up] > div > div") &&
+    !e.target.closest("[data-pop-up] > div ") &&
     e.target.closest("[data-pop-up]").classList.contains("visible")
   ) {
+    console.log(2);
     e.target.closest("[data-pop-up]").classList.remove("visible");
     document.body.classList.remove("lock");
   }
