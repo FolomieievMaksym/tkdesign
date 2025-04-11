@@ -42,31 +42,26 @@
     @include fl(18);
   }
 }
-.button-dark {
+.button {
   text-transform: uppercase;
   display: block;
-  background-color: $dark;
-  color: $white;
-  letter-spacing: 0.18em;
-  @include fl(6);
+  letter-spacing: 0.018em;
+  //   @include fl(6);
+  @include fl(10);
   padding: 12px 15px;
   @media (min-width: 568px) {
-    @include fl(10);
+    //  @include fl(8);
+    @include fl(12);
     padding: 14px 20px;
   }
 }
+.button-dark {
+  background-color: $dark;
+  color: $white;
+}
 .button-transparent {
-  text-transform: uppercase;
-  display: block;
   color: $dark;
   border: 1px solid $dark;
-  letter-spacing: 0.18em;
-  @include fl(6);
-  padding: 12px 15px;
-  @media (min-width: 568px) {
-    @include fl(10);
-    padding: 14px 20px;
-  }
 }
 .hero {
   // .hero__container
@@ -161,7 +156,7 @@
     }
   }
 
-  .contact-form-btn {
+  [data-form-open] {
     grid-column: span 2;
     @media (min-width: 568px) {
       grid-column: span 3;
@@ -449,7 +444,7 @@
     }
   }
 
-  .contact-form-btn {
+  [data-form-open] {
     @media (max-width: 567px) {
       align-self: flex-start;
     }
@@ -536,13 +531,23 @@
     @media (min-width: 990px) {
       @include fl(32);
     }
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 
   // .process-item__body
 
   &__body {
     @media (max-width: 567px) {
-      transition: all 0.5s ease;
+      transition: all 0.3s ease;
       overflow: hidden;
       height: 0;
     }
@@ -687,7 +692,7 @@
     }
   }
 
-  .contact-form-btn {
+  [data-form-open] {
     min-width: 140px;
     @media (min-width: 568px) {
       min-width: 300px;

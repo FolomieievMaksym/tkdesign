@@ -1,5 +1,5 @@
 const popUp = document.querySelector(".contact-pop-up");
-const popUpOpenBtns = document.querySelectorAll(".contact-form-btn");
+const popUpOpenBtns = document.querySelectorAll("[data-form-open]");
 const popUpClose = document.querySelector(".contact-pop-up__close");
 const popUpBody = document.querySelector(".contact-pop-up__body");
 popUpOpenBtns.forEach((el) => {

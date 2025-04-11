@@ -507,22 +507,6 @@ button {
   line-height: 1.25;
 }
 
-.contact-form-btn {
-  background-color: #494846;
-  color: #fff;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  font-size: 0.5rem;
-  line-height: 1.25;
-  letter-spacing: 0.18em;
-  padding: 10px;
-}
-
-.contact-form-btn:hover {
-  opacity: 0.9;
-}
-
 .contact-pop-up {
   position: fixed;
   z-index: 10;
@@ -680,26 +664,23 @@ button {
   line-height: 1.25;
 }
 
-.button-dark {
+.button {
   text-transform: uppercase;
   display: block;
-  background-color: #494846;
-  color: #fff;
-  letter-spacing: 0.18em;
-  font-size: 0.375rem;
+  letter-spacing: 0.018em;
+  font-size: 0.625rem;
   line-height: 1.25;
   padding: 12px 15px;
 }
 
+.button-dark {
+  background-color: #494846;
+  color: #fff;
+}
+
 .button-transparent {
-  text-transform: uppercase;
-  display: block;
   color: #494846;
   border: 1px solid #494846;
-  letter-spacing: 0.18em;
-  font-size: 0.375rem;
-  line-height: 1.25;
-  padding: 12px 15px;
 }
 
 .hero__container {
@@ -742,7 +723,7 @@ button {
   object-position: center;
 }
 
-.hero .contact-form-btn {
+.hero [data-form-open] {
   grid-column: span 2;
 }
 
@@ -888,6 +869,18 @@ button {
   line-height: 1.25;
 }
 
+.process-item__title button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.process-item__title button svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .work__title {
   text-align: center;
   margin-bottom: 30px;
@@ -946,7 +939,7 @@ button {
   margin-bottom: 25px;
 }
 
-.interesting .contact-form-btn {
+.interesting [data-form-open] {
   min-width: 140px;
 }
 
@@ -1019,12 +1012,6 @@ button {
     height: 45px;
   }
 
-  .contact-form-btn {
-    font-size: 0.625rem;
-    line-height: 1.25;
-    padding: 14px;
-  }
-
   .contact-pop-up__body {
     padding-bottom: 50px;
   }
@@ -1080,14 +1067,8 @@ button {
     line-height: 1.25;
   }
 
-  .button-dark {
-    font-size: 0.625rem;
-    line-height: 1.25;
-    padding: 14px 20px;
-  }
-
-  .button-transparent {
-    font-size: 0.625rem;
+  .button {
+    font-size: 0.75rem;
     line-height: 1.25;
     padding: 14px 20px;
   }
@@ -1106,7 +1087,7 @@ button {
     grid-row: 1/4;
   }
 
-  .hero .contact-form-btn {
+  .hero [data-form-open] {
     grid-column: span 3;
     grid-row: 3/4;
   }
@@ -1172,7 +1153,7 @@ button {
     margin-bottom: 50px;
   }
 
-  .process .contact-form-btn {
+  .process [data-form-open] {
     align-self: center;
   }
 
@@ -1232,7 +1213,7 @@ button {
     margin-bottom: 50px;
   }
 
-  .interesting .contact-form-btn {
+  .interesting [data-form-open] {
     min-width: 300px;
   }
 }
@@ -1357,10 +1338,6 @@ button {
     line-height: 1.25;
   }
 
-  .contact-form-btn {
-    padding: 23px;
-  }
-
   .contact-pop-up__body {
     padding: 20px;
     padding-top: 35px;
@@ -1437,7 +1414,7 @@ button {
     padding-bottom: 78.0357142857%;
   }
 
-  .hero .contact-form-btn {
+  .hero [data-form-open] {
     grid-column: 1/4;
     grid-row: 3/4;
   }
@@ -1547,7 +1524,7 @@ button {
     margin-bottom: 70px;
   }
 
-  .interesting .contact-form-btn {
+  .interesting [data-form-open] {
     min-width: 360px;
   }
 }
@@ -1655,6 +1632,8 @@ button {
     grid-column: 1/3;
     grid-row: 4/6;
     justify-self: start;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
   }
 
   .footer__email {
@@ -1675,7 +1654,7 @@ button {
     margin-bottom: 30px;
   }
 
-  .process .contact-form-btn {
+  .process [data-form-open] {
     align-self: flex-start;
   }
 
@@ -1703,7 +1682,7 @@ button {
   }
 
   .process-item__body {
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     overflow: hidden;
     height: 0;
   }
