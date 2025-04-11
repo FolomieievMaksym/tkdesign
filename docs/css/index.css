@@ -427,33 +427,31 @@ button {
 .footer__container {
   padding-top: 16px;
   padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, auto) 1fr repeat(2, auto);
 }
 
-.footer__head {
-  margin-bottom: 22px;
+.footer__logo {
+  grid-row: 1/2;
+}
+
+.footer__text {
+  letter-spacing: 0.018em;
   text-transform: uppercase;
   font-size: 0.5rem;
   line-height: 1.25;
-  color: #fff;
-  letter-spacing: 0.018em;
 }
 
-.footer__bottom {
-  color: #fff;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  -moz-column-gap: 20px;
-  column-gap: 20px;
-  row-gap: 12px;
+.footer__policy {
+  letter-spacing: 0.018em;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  line-height: 1.25;
 }
 
 .footer__links {
-  grid-row: 1/4;
-  grid-column: 1/3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 20px;
-  column-gap: 20px;
   row-gap: 12px;
 }
 
@@ -465,8 +463,6 @@ button {
 }
 
 .footer__email {
-  grid-row: 1/2;
-  grid-column: 3/5;
   letter-spacing: 0.018em;
   text-transform: uppercase;
   font-size: 0.5rem;
@@ -478,8 +474,6 @@ button {
 }
 
 .footer__socials {
-  grid-row: 3/4;
-  grid-column: 3/5;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -959,34 +953,35 @@ button {
   .footer__container {
     padding-top: 20px;
     padding-bottom: 20px;
+    grid-template-columns: repeat(4, auto) 1fr repeat(4, auto);
   }
 
-  .footer__head {
-    margin-bottom: 50px;
-    display: grid;
-    -moz-column-gap: 20px;
-    column-gap: 20px;
-    grid-template-columns: repeat(8, 1fr);
-    font-size: 0.625rem;
-    line-height: 1.25;
+  .footer__logo {
+    grid-column: 1/3;
   }
 
   .footer__text {
+    font-size: 0.625rem;
+    line-height: 1.25;
     grid-column: 1/5;
     grid-row: 2/3;
   }
 
   .footer__policy {
-    grid-column: 6/9;
+    grid-column: 7/10;
     grid-row: 2/3;
+    font-size: 0.625rem;
+    line-height: 1.25;
   }
 
-  .footer__bottom {
-    grid-template-columns: repeat(8, 1fr);
+  .footer__policy br {
+    display: none;
   }
 
   .footer__links {
+    margin-top: 50px;
     grid-column: 1/5;
+    grid-row: 3/7;
   }
 
   .footer__link {
@@ -997,11 +992,13 @@ button {
   .footer__email {
     font-size: 0.625rem;
     line-height: 1.25;
-    grid-column: 6/9;
+    grid-column: 7/10;
+    grid-row: 4/5;
   }
 
   .footer__socials {
-    grid-column: 6/9;
+    grid-column: 7/10;
+    grid-row: 6/7;
   }
 
   .footer__social {
@@ -1309,31 +1306,25 @@ button {
   .footer__container {
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-
-  .footer__head {
-    margin-bottom: 60px;
     grid-template-columns: repeat(12, 1fr);
-    font-size: 0.75rem;
-    line-height: 1.25;
-  }
-
-  .footer__logo {
-    grid-column: 1/3;
   }
 
   .footer__text {
-    grid-column: 3/7;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    grid-column: 3/9;
     grid-row: 1/2;
   }
 
   .footer__policy {
+    font-size: 0.75rem;
+    line-height: 1.25;
     grid-column: 10/13;
     grid-row: 1/2;
   }
 
-  .footer__bottom {
-    grid-template-columns: repeat(12, 1fr);
+  .footer__links {
+    margin-top: 60px;
   }
 
   .footer__link {
@@ -1564,6 +1555,22 @@ button {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .footer__container {
+    grid-template-columns: repeat(10, 1fr) auto;
+  }
+
+  .footer__policy {
+    grid-column: 13/14;
+  }
+
+  .footer__email {
+    grid-column: 13/14;
+  }
+
+  .footer__socials {
+    grid-column: 13/14;
+  }
 }
 
 @media (max-width: 989px) {
@@ -1616,16 +1623,38 @@ button {
 @media (max-width: 567px) {
   .footer__logo {
     margin-bottom: 4px;
-    grid-column: span 4;
-    grid-row: 1/2;
+  }
+
+  .footer__logo {
+    grid-column: 1/6;
   }
 
   .footer__text {
     margin-bottom: 20px;
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+
+  .footer__policy {
+    grid-row: 3/4;
+    grid-column: 1/3;
   }
 
   .footer__links {
+    margin-top: 20px;
+    grid-column: 1/3;
+    grid-row: 4/6;
     justify-self: start;
+  }
+
+  .footer__email {
+    grid-column: 4/6;
+    grid-row: 3/4;
+  }
+
+  .footer__socials {
+    grid-row: 5/6;
+    grid-column: 4/6;
   }
 
   .hero__head {
@@ -1674,7 +1703,7 @@ button {
   }
 }
 
-@media (min-width: 568px) and (max-width: 990px) {
+@media (min-width: 567px) and (max-width: 989px) {
   .footer__logo {
     margin-bottom: 10px;
   }
