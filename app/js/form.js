@@ -3,22 +3,22 @@ const popUpOpenBtns = document.querySelectorAll("[data-form-open]");
 const popUpClose = document.querySelector(".contact-pop-up__close");
 const popUpBody = document.querySelector(".contact-pop-up__body");
 const form = document.querySelector(".contact-pop-up__form");
-// const host = "http://localhost:5000";
+// const host = "http://localhost:6000";
 const host = "https://api.artdesign.com.de";
-try {
-  const ress = await fetch(`${host}/hello`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-  const result = await ress.json();
-  console.log("ok");
-  console.log(result);
-} catch (error) {
-  console.log("err");
-  console.log(error);
-}
+// try {
+//   const ress = await fetch(`${host}/hello`, {
+//     method: "GET",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//   });
+//   const result = await ress.json();
+//   console.log("ok");
+//   console.log(result);
+// } catch (error) {
+//   console.log("err");
+//   console.log(error);
+// }
 popUpOpenBtns.forEach((el) => {
   el.addEventListener("click", showPopUp);
 });
