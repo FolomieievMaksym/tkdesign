@@ -1,0 +1,5 @@
+@use "./default" as *;
+@use "./default/patterns" as *;
+h1 {
+  font-family: $ff2;
+}

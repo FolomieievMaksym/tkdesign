@@ -338,6 +338,9 @@
     @media (min-width: 990px) {
       column-gap: 36px;
       row-gap: 50px;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

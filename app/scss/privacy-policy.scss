@@ -1,0 +1,25 @@
+// Подлкючение базовых стилей
+@use "./default/variables";
+@use "./default/null";
+@use "./default/mixins";
+@use "./default/function";
+@use "./default/patterns";
+@use "./default/fonts";
+@use "./default/global";
+@use "./default/text";
+
+// Header / Footer
+@use "./components/structure/header";
+@use "./components/structure/footer";
+
+// Подключение стилей компонентов
+// @use "./components/base/btn";
+// @use "./components/base/spoiler";
+// @use "./components/base/pop-up";
+// @use "./components/base/pop-up-video";
+// @use "./components/base/animate";
+
+// @use "./components/base/marquee";
+
+//Подключение стилей конкретной страницы
+@use "./pages/privacy-policy";

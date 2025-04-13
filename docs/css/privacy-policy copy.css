@@ -502,7 +502,7 @@ button {
   justify-self: start;
 }
 
-.footer__social a {
+.footer__social {
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -517,7 +517,7 @@ button {
   transition: all 0.3s ease;
 }
 
-.footer__social a:hover {
+.footer__social:hover {
   box-shadow: 0 0 10px rgba(249, 246, 239, 0.3);
 }
 
@@ -1261,7 +1261,7 @@ button {
     grid-row: 6/7;
   }
 
-  .footer__social a {
+  .footer__social {
     font-size: 0.875rem;
     line-height: 1.25;
     width: 45px;
@@ -1551,7 +1551,7 @@ button {
 }
 
 @media (min-width: 640px) {
-  .footer__social a {
+  .footer__social {
     width: 60px;
     height: 60px;
   }
@@ -1667,7 +1667,7 @@ button {
     grid-column: 10/13;
   }
 
-  .footer__social a {
+  .footer__social {
     font-size: 1.25rem;
     line-height: 1.25;
   }

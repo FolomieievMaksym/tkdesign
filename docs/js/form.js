@@ -24,7 +24,19 @@ function handleClickOutside(e) {
 form.addEventListener("submit", handleForm);
 async function handleForm(e) {
   e.preventDefault();
-  const name = e.target.elements.name;
-  const email = e.target.elements.email;
-  const message = e.target.elements.message;
+  const name = e.target.name.value.trim();
+  const email = e.target.email.value.trim();
+  const message = e.target.message.value.trim();
+
+  // const res = await fetch("https://artdesign.com.de/contact", {
+  const res = await fetch("http://localhost:5000/contact", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ name, email, message }),
+  });
+
+  const result = await res.json();
+  console.log(result);
 }
