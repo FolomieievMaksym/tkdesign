@@ -3,7 +3,7 @@ const popUpOpenBtns = document.querySelectorAll("[data-form-open]");
 const popUpClose = document.querySelector(".contact-pop-up__close");
 const popUpBody = document.querySelector(".contact-pop-up__body");
 const form = document.querySelector(".contact-pop-up__form");
-// const host = "http://localhost:6000";
+// const host = "http://localhost:7000";
 const host = "https://api.artdesign.com.de";
 // try {
 //   const ress = await fetch(`${host}/hello`, {
