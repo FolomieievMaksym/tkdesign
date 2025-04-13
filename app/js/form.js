@@ -28,8 +28,8 @@ async function handleForm(e) {
   const email = e.target.email.value.trim();
   const message = e.target.message.value.trim();
 
-  // const res = await fetch("https://artdesign.com.de/contact", {
-  const res = await fetch("http://localhost:5000/contact", {
+  const res = await fetch("https://api.artdesign.com.de/contact", {
+    //   const res = await fetch("http://localhost:5000/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -38,5 +38,5 @@ async function handleForm(e) {
   });
 
   const result = await res.json();
-  console.log(result);
+  console.log(result.message);
 }
