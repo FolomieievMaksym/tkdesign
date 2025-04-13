@@ -3,19 +3,21 @@ const popUpOpenBtns = document.querySelectorAll("[data-form-open]");
 const popUpClose = document.querySelector(".contact-pop-up__close");
 const popUpBody = document.querySelector(".contact-pop-up__body");
 const form = document.querySelector(".contact-pop-up__form");
-// const ress = await fetch("http://localhost:5000/hello", {
+// const host = "http://localhost:5000";
+const host = "https://api.artdesign.com.de";
 try {
-  const res = await fetch("https://api.artdesign.com.de/hello", {
+  const ress = await fetch(`${host}/hello`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
     },
   });
+  const result = await ress.json();
   console.log("ok");
-  console.log(res);
+  console.log(result);
 } catch (error) {
   console.log("err");
-  console.log(error.response.message);
+  console.log(error);
 }
 popUpOpenBtns.forEach((el) => {
   el.addEventListener("click", showPopUp);
@@ -43,8 +45,7 @@ async function handleForm(e) {
   const email = e.target.email.value.trim();
   const message = e.target.message.value.trim();
   try {
-    const res = await fetch("https://api.artdesign.com.de/contact", {
-      //  const res = await fetch("http://localhost:5000/contact", {
+    const res = await fetch(`${host}/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
