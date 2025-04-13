@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+Host: https://artdesign.com.de
+Sitemap: https://artdesign.com.de/sitemap.xml
