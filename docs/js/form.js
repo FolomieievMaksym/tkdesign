@@ -4,13 +4,19 @@ const popUpClose = document.querySelector(".contact-pop-up__close");
 const popUpBody = document.querySelector(".contact-pop-up__body");
 const form = document.querySelector(".contact-pop-up__form");
 // const ress = await fetch("http://localhost:5000/hello", {
-const ress = await fetch("https://api.artdesign.com.de/hello", {
-  method: "GET",
-  headers: {
-    "Content-Type": "application/json",
-  },
-});
-console.log(ress);
+try {
+  const res = await fetch("https://api.artdesign.com.de/hello", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  console.log("ok");
+  console.log(res);
+} catch (error) {
+  console.log("err");
+  console.log(error.response.message);
+}
 popUpOpenBtns.forEach((el) => {
   el.addEventListener("click", showPopUp);
 });
