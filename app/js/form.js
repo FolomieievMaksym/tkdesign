@@ -3,6 +3,14 @@ const popUpOpenBtns = document.querySelectorAll("[data-form-open]");
 const popUpClose = document.querySelector(".contact-pop-up__close");
 const popUpBody = document.querySelector(".contact-pop-up__body");
 const form = document.querySelector(".contact-pop-up__form");
+// const ress = await fetch("http://localhost:5000/hello", {
+const ress = await fetch("https://api.artdesign.com.de/hello", {
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+console.log(ress);
 popUpOpenBtns.forEach((el) => {
   el.addEventListener("click", showPopUp);
 });
@@ -22,21 +30,25 @@ function handleClickOutside(e) {
   if (!e.target.closest(".contact-pop-up__body")) closePopUp();
 }
 form.addEventListener("submit", handleForm);
+
 async function handleForm(e) {
   e.preventDefault();
   const name = e.target.name.value.trim();
   const email = e.target.email.value.trim();
   const message = e.target.message.value.trim();
+  try {
+    const res = await fetch("https://api.artdesign.com.de/contact", {
+      //  const res = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, message }),
+    });
 
-  const res = await fetch("https://api.artdesign.com.de/contact", {
-    //   const res = await fetch("http://localhost:5000/contact", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ name, email, message }),
-  });
-
-  const result = await res.json();
-  console.log(result.message);
+    const result = await res.json();
+    alert(result.message);
+  } catch (error) {
+    alert(error.response.message);
+  }
 }
